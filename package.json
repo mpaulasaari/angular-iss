@@ -1,6 +1,9 @@
 {
   "name": "angular-iss",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Mika Paulasaari <mika@paulasaari.fi>",
+  "licence": "UNLICENSED",
+  "private": true,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +12,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~7.1.0",
     "@angular/common": "~7.1.0",
