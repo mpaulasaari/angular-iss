@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './map.component.html'
 })
 export class MapComponent {
-  private map_image = require('@assets/images/map.svg');
 }
