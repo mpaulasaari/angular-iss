@@ -7,16 +7,23 @@ import { IssService } from './iss.service'
   styleUrls: ['./iss.component.scss'],
   providers: [IssService]
 })
-export class IssComponent {
-  @Input()
-  top: string
-  @Input()
-  left: string
 
-  constructor(private issService: IssService) {}
+export class IssComponent {
+  @Input() left: string
+  @Input() top: string
+
+  locationInterval = null
+
+  constructor(private issService: IssService) { }
 
   ngOnInit() {
     this.getLocation()
+
+    this.locationInterval = setInterval(() => this.getLocation(), 5000)
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.locationInterval)
   }
 
   getLocation() {
