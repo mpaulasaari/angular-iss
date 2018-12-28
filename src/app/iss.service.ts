@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
+
 export class IssService {
   constructor(private http: HttpClient) { }
 
